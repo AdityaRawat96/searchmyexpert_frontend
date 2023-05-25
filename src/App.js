@@ -44,7 +44,7 @@ import Project from './pages/Client/Projects/Project/Project';
 function App() {
   return (
     <div className="App">
-      <SweetAlertComponent />
+      {/* <SweetAlertComponent /> */}
 
       <Routes>
         <Route path="/" element={<Auth />} errorElement={<ErrorPage />}>
