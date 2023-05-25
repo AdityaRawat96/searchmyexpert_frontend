@@ -1,4 +1,15 @@
-.auth_sidebar {
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  position: relative;
+  width: 300px;
+  min-height: 100vh;
   background: repeating-linear-gradient(
     135deg,
     #404d5a,
@@ -6,26 +17,38 @@
     #3e4b58 5px,
     #3e4b58 10px
   );
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  position: relative;
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar_header {
+  position: relative !important;
+  width: 100% !important;
   border-bottom: 1px solid rgb(128, 128, 128, 0.3);
-  padding: 5px 30px;
-}
-
-.sidebar_brand {
-  width: 100%;
-  margin: 0px;
-}
-
-.sidebar_body {
-  padding: 30px;
+  padding: 5px 10px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar_logo {
   position: relative;
-  width: 100%;
+  width: 200px;
   height: 100%;
+}
+
+.sidebar_body {
+  padding: 30px;
 }
 
 .sidebar_heading_text {
@@ -36,16 +59,16 @@
 
 .sidebar_subheading_text {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: normal;
   color: #cdd1d4;
   margin-top: 20px;
 }
 
 .sidebar_footer {
-  position: absolute;
-  bottom: 0px;
+  position: relative;
   padding: 30px;
   display: flex;
+  margin-top: auto;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -72,4 +95,14 @@
 .sidebar_footer_link:hover {
   text-decoration: none;
   color: #ff8686;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100vw;
+  }
+
+  .sidebar_body {
+    text-align: center;
+  }
 }

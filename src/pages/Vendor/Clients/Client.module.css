@@ -1,0 +1,74 @@
+.action_buttons_container {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+.action_buttons_container button {
+  width: 45px !important;
+  border: 1px solid #b5b5b5;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 20px 0px 20px 20px !important;
+}
+
+.label {
+  font-size: 16px;
+  display: block;
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle_secondary {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff6666;
+}
+
+.icon {
+  position: relative;
+  color: #4b5a69;
+}
+
+.icon_primary {
+  font-size: 40px;
+}
+
+.icon_secondary {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 30px;
+  right: -15px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid #4b5a69;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_orange {
+  color: #fda23b;
+}
+
+.icon_red {
+  color: red;
+}
+
+.icon_green {
+  color: green;
+}

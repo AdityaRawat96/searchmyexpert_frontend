@@ -1,167 +1,38 @@
 import classes from './Clients.module.css';
-import AccordionCard from './AccordionCard';
-import {
-  Button,
-  Col,
-  Form,
-  Image,
-  InputGroup,
-  Modal,
-  Row,
-} from 'react-bootstrap';
+import { Col, Form, Image, InputGroup, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faIndianRupee,
   faList,
   faSearch,
   faTableCellsLarge,
-  faTimes,
 } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const Clients_List = [];
+const Clients_List = [
+  {
+    id: 1,
+    name: 'Client 1',
+    email: 'client@gmail.com',
+    phone: '1234567890',
+    industry: 'Industry 1',
+    notes: 'Client Address',
+  },
+  {
+    id: 2,
+    name: 'Client 2',
+    email: 'client@gmail.com',
+    phone: '1234567890',
+    industry: 'Industry 2',
+    notes: 'Client Address',
+  },
+];
 
 const Clients = () => {
-  const [showFormModal, setShowFormModal] = useState(false);
-  const [showStatusModal, setShowStatusModal] = useState(false);
-
-  const handleFormModalClose = () => setShowFormModal(false);
-  const handleFormModalShow = () => setShowFormModal(true);
-
-  const handleStatusModalClose = () => setShowStatusModal(false);
-  const handleStatusModalShow = () => setShowStatusModal(true);
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    handleFormModalClose();
-    handleStatusModalShow();
-  };
-
   return (
     <div className={`page-content-wrapper-main ${classes.Clients}`}>
-      <Modal
-        show={showStatusModal}
-        onHide={handleStatusModalClose}
-        backdrop="static"
-        keyboard={false}
-        centered
-        className="custom-form-modal"
-      >
-        <Modal.Header className="border-none">
-          <Modal.Title className="w-100 text-center"></Modal.Title>
-          <FontAwesomeIcon
-            icon={faTimes}
-            onClick={handleStatusModalClose}
-            className="modal-close-icon"
-          />
-        </Modal.Header>
-        <Modal.Body>
-          <div className="center-elements-div">
-            <Image src="/assets/images/proposal_sent.svg" alt="success" fluid />
-            <h3 className="mt-5 mb-5">Your Proposal Has Been Sent!</h3>
-          </div>
-        </Modal.Body>
-      </Modal>
-
-      <Modal
-        show={showFormModal}
-        onHide={handleFormModalClose}
-        backdrop="static"
-        keyboard={false}
-        centered
-        className="custom-form-modal"
-      >
-        <Modal.Header className="border-none">
-          <Modal.Title className="w-100 text-center">
-            Submit Proposal
-          </Modal.Title>
-          <FontAwesomeIcon
-            icon={faTimes}
-            onClick={handleFormModalClose}
-            className="modal-close-icon"
-          />
-        </Modal.Header>
-        <Modal.Body>
-          <Row>
-            <Col md={6} sm={12}>
-              <Form.Label htmlFor="vendor-budget">Budget</Form.Label>
-              <InputGroup className="mb-3">
-                <Form.Control
-                  type="number"
-                  placeholder=""
-                  aria-label="Budget"
-                  aria-describedby="vendor-budget"
-                />
-                <InputGroup.Text id="vendor-budget">
-                  <FontAwesomeIcon icon={faIndianRupee} />
-                </InputGroup.Text>
-              </InputGroup>
-            </Col>
-            <Col md={6} sm={12}>
-              <Form.Label htmlFor="vendor-time">Time</Form.Label>
-              <InputGroup className="mb-3">
-                <Form.Control
-                  type="date"
-                  placeholder=""
-                  aria-label="Time"
-                  aria-describedby="vendor-time"
-                />
-              </InputGroup>
-            </Col>
-          </Row>
-          <Form.Label htmlFor="vendor-service">Service Type</Form.Label>
-          <Form.Select
-            aria-label="Service Type Dropdown"
-            aria-describedby="vendor-service"
-            className="mb-3"
-          >
-            <option>Select here</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </Form.Select>
-          <Form.Label htmlFor="vendor-platform">Platform</Form.Label>
-          <Form.Select
-            aria-label="Platform Dropdown"
-            aria-describedby="vendor-platform"
-            className="mb-3"
-          >
-            <option>Select here</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </Form.Select>
-          <Form.Group className="mb-3" controlId="references">
-            <Form.Label>References</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={5}
-              aria-describedby="vendor-references"
-            />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="description">
-            <Form.Label>Description</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={5}
-              aria-describedby="vendor-description"
-            />
-          </Form.Group>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button
-            variant="primary"
-            className="btn-cta form-control"
-            onClick={submitHandler}
-          >
-            Submit
-          </Button>
-        </Modal.Footer>
-      </Modal>
-
       <Row className="mb-3">
         <Col md={6} sm={12}>
-          <h3 className="page-content-heading">Clients</h3>
+          <h3 className="page-content-heading">Active Clients</h3>
         </Col>
         <Col md={6} sm={12}>
           <Row>
@@ -195,15 +66,38 @@ const Clients = () => {
           </Row>
         </Col>
       </Row>
+
       {Clients_List.length > 0 ? (
-        Clients_List.map((item, index) => (
-          <AccordionCard
-            index={index}
-            item={item}
-            key={index}
-            handleShow={handleFormModalShow}
-          />
-        ))
+        <div className="table-responsive">
+          <table className="table table-custom-dahboard">
+            <thead>
+              <tr>
+                <th>Client ID</th>
+                <th>Client Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Industry</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Clients_List.map((client) => (
+                <tr key={client.id}>
+                  <td>{client.id}</td>
+                  <td>
+                    <Link to={`/vendor/clients/${client.id}`}>
+                      {client.name}
+                    </Link>
+                  </td>
+                  <td>{client.email}</td>
+                  <td>{client.phone}</td>
+                  <td>{client.industry}</td>
+                  <td>{client.notes}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       ) : (
         <div className="center-elements-div mt-5">
           <div className="no-data-container">

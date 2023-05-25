@@ -1,8 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('/public/assets/fonts/SF-Pro-Display-Heavy.otf');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('/public/assets/fonts/SF-Pro-Display-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('/public/assets/fonts/SF-Pro-Display-Medium.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('/public/assets/fonts/SF-Pro-Display-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('/public/assets/fonts/SF-Pro-Display-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: url('/public/assets/fonts/SF-Pro-Display-Thin.otf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+* {
+  font-family: 'SF-Pro-Display', sans-serif;
+}
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'SF-Pro-Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #4b5a69 !important;

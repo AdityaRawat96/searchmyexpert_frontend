@@ -30,6 +30,8 @@
 }
 
 .sidebar_header {
+  position: relative !important;
+  width: 100% !important;
   border-bottom: 1px solid rgb(128, 128, 128, 0.3);
   padding: 5px 10px;
   height: 60px;
@@ -40,7 +42,18 @@
   margin-right: 20px;
 }
 
+.sidebar_container {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column;
+}
+
 .sidebar_body {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
   padding: 0px;
 }
 
@@ -72,13 +85,14 @@
 }
 
 .sidebar_footer {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   padding: 30px;
   display: flex;
   width: 100%;
   flex-direction: row;
   align-items: center;
+  margin-top: auto !important;
   border-top: 1px solid rgb(128, 128, 128, 0.3);
 }
 
@@ -149,5 +163,9 @@
   }
   .header_primary {
     display: flex;
+  }
+  .main_show {
+    overflow: hidden;
+    opacity: 0.5;
   }
 }

@@ -62,6 +62,10 @@ body,
   align-items: center;
 }
 
+.input-search {
+  max-width: 60vw !important;
+}
+
 .navbar-collapse.collapse.show {
   background-color: #f8f8f9 !important;
   z-index: 100 !important;

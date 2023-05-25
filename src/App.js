@@ -39,6 +39,7 @@ import ClientSupport from './pages/Client/Support/Support';
 import ClientTicket from './pages/Client/Support/Ticket';
 import Projects from './pages/Client/Projects/Projects';
 import Project from './pages/Client/Projects/Project/Project';
+import Client from './pages/Vendor/Clients/Client';
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
           <Route path="payments" element={<VendorPayments />} />
           <Route path="leads" element={<Leads />} />
           <Route path="clients" element={<Clients />} />
+          <Route path="clients/:id" element={<Client />} />
           <Route path="profile" element={<VendorProfile />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="faq" element={<VendorFAQ />} />

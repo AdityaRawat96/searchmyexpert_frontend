@@ -52,8 +52,6 @@ const VendorLayout = () => {
     return () => window.removeEventListener('resize', resizeWindow);
   }, []);
 
-  useEffect(() => {}, []);
-
   return (
     <div className={classes.root}>
       <Sidebar
