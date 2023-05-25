@@ -1,6 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import SweetAlertComponent from './components/SweetAlertComponent';
 import { RequireAuth, RequireAdminAuth } from './context/AuthContext';
 import { FilterContextProvider } from './context/FilterContext';
 import About from './pages/About';
@@ -44,8 +43,6 @@ import Project from './pages/Client/Projects/Project/Project';
 function App() {
   return (
     <div className="App">
-      {/* <SweetAlertComponent /> */}
-
       <Routes>
         <Route path="/" element={<Auth />} errorElement={<ErrorPage />}>
           <Route index element={<Login />} />
