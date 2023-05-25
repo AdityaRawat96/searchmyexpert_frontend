@@ -1,0 +1,29 @@
+.header_container {
+  margin-top: 50px;
+}
+
+.header_container span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: white;
+}
+
+.datatable_container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+.custom_button {
+  border-radius: 0px !important;
+  background-color: rgba(60, 223, 31, 1) !important;
+  color: black;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+  border: none !important;
+}
+
+.button_container {
+  margin-top: 50px;
+}

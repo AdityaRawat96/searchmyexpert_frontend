@@ -1,0 +1,35 @@
+.modal_btn_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+}
+
+.chat_wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 50px;
+  border: 1px solid #d1d6dc;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.chat_wrapper input,
+.chat_wrapper input:hover,
+.chat_wrapper input:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.chat_wrapper button {
+  border: none !important;
+}

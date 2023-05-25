@@ -1,0 +1,93 @@
+.fc {
+  color: #4b5a69;
+  margin-bottom: 50px !important;
+}
+
+.fc-view-harness {
+  background-color: #fff;
+}
+
+th .fc-scrollgrid-sync-inner {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.fc-scrollgrid-sync-inner a {
+  text-decoration: none;
+  color: #4b5a69;
+}
+
+.fc-timegrid-axis-frame-liquid {
+  text-transform: capitalize;
+}
+
+.fc-event {
+  background-color: #f3f3f3;
+  padding: 5px 10px;
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  border-radius: 5px;
+  text-decoration: none;
+  color: #4b5a69;
+}
+
+.fc-event > div.fc-event-main {
+  display: flex;
+  flex-direction: column;
+  color: #4b5a69;
+}
+
+.fc-event > div.fc-event-main > b,
+.fc-daygrid-event b {
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+}
+
+.fc-event > div.fc-event-main > i,
+.fc-daygrid-event i {
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fc-daygrid-event {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: #4b5a69;
+  text-align: start;
+}
+
+.fc-daygrid-event:hover {
+  text-decoration: none;
+  color: #4b5a69;
+}
+
+.fc .fc-scroller-harness,
+.fc-scroller {
+  overflow: visible !important;
+}
+
+.fc-button {
+  text-transform: capitalize !important;
+}
+
+.fc-toolbar {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
+}
+
+.fc-toolbar-title {
+  font-weight: 400px !important;
+}
+
+@media (max-width: 850px) {
+  .fc-toolbar {
+    display: flex;
+    flex-direction: column;
+  }
+}

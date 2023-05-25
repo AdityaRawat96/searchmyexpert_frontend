@@ -1,0 +1,123 @@
+.card {
+  border-radius: 20px 0 20px 20px;
+}
+
+.card_header {
+  background: none !important;
+  border-bottom: 1px solid rgb(128, 128, 128, 0.3) !important;
+}
+
+.card_header_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_header_container_right {
+  margin-left: auto;
+  float: right;
+}
+
+.card_header_container_right button {
+  margin: 5px;
+}
+
+.card_header_container_left_title,
+.card_body_item_title {
+  font-size: 1rem;
+  color: #6e6f70;
+}
+
+.card_body_container {
+  position: relative;
+  width: 100%;
+  padding: 15px 10px;
+  background-color: #f8f8f9;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card_body_item {
+  margin-right: 3rem;
+}
+
+.card_header_container_left_subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #20bf2b;
+}
+
+.card_body_item_title {
+  display: block;
+}
+
+.card_body_item_subtitle {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.card_collapsed {
+  height: 100px;
+  overflow: hidden;
+  transition: all ease-in-out 0.5s;
+}
+
+.card_expanded {
+  transition: all ease-in-out 0.5s;
+  margin-bottom: 20px;
+}
+
+.card_description_controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-image: linear-gradient(rgb(255, 255, 255, 0.5), #fff);
+  position: relative;
+  top: -20px;
+}
+
+.card_control_button {
+  border: none !important;
+  background: none !important;
+}
+
+.card_description_controls_normal {
+  transition: all ease-in-out 0.5s;
+}
+
+.card_description_controls_inverted {
+  transform: rotate(180deg);
+  transition: all ease-in-out 0.5s;
+}
+
+.btn_accept,
+.btn_submit {
+  background-color: #079e16 !important;
+  border: none !important;
+  padding: 10px !important;
+}
+
+.btn_reject {
+  background-color: #e93030 !important;
+  border: none !important;
+  padding: 10px !important;
+}
+
+@media (max-width: 1000px) {
+  .card_body_container,
+  .card_header_container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .card_header_container_right {
+    margin-left: 0;
+  }
+}

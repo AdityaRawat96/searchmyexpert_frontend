@@ -1,0 +1,38 @@
+.overview_section {
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+  margin-top: 0px;
+  border-radius: 0px 0px 20px 20px !important;
+}
+
+.overview_details_label {
+  font-size: 1rem;
+  color: #ff8686;
+}
+
+.overview_details_label span {
+  margin-left: 5px;
+}
+
+.overview_details_value {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.attachment_container {
+  position: relative;
+  width: 100%;
+  border: 1px dashed rgb(128, 128, 128, 0.4);
+  height: 100px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+}

@@ -1,0 +1,42 @@
+.navbar_custom {
+  background-color: black;
+  background-image: linear-gradient(
+    to left,
+    rgba(60, 223, 31, 0.1),
+    rgba(60, 223, 31, 1)
+  );
+  height: 50px;
+}
+
+.footer_upper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #332d2d;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.footer_lower {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.card {
+  border-radius: 0px !important;
+}
+
+.card_header {
+  border-radius: 0px !important;
+  background-color: rgba(60, 223, 31, 1) !important;
+}
+
+.card_body {
+  border-radius: 0px !important;
+  background-color: #000 !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

@@ -1,0 +1,17 @@
+.navbar_custom {
+  background-color: black;
+  background-image: linear-gradient(
+    to left,
+    rgba(60, 223, 31, 0.1),
+    rgba(60, 223, 31, 1)
+  );
+  height: 50px;
+}
+
+.footer_upper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+}

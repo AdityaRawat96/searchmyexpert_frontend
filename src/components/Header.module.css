@@ -1,0 +1,9 @@
+.navbar_custom {
+  background-color: black;
+  background-image: linear-gradient(
+    to left,
+    rgba(60, 223, 31, 0.1),
+    rgba(60, 223, 31, 1)
+  );
+  height: 70px;
+}

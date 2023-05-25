@@ -1,0 +1,11 @@
+.about_text {
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.about_text span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: white;
+}

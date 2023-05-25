@@ -1,0 +1,95 @@
+.Dashboard {
+  padding: 5vw;
+  padding-bottom: 0px;
+}
+
+.title {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.background_striped_dark {
+  background: repeating-linear-gradient(
+    135deg,
+    #404d5a,
+    #404d5a 5px,
+    #3e4b58 5px,
+    #3e4b58 10px
+  );
+  color: white;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 20px 0px 20px 20px !important;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+}
+
+.label {
+  font-size: 16px;
+  display: block;
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle_secondary {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff6666;
+}
+
+.currency {
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  top: -3px;
+}
+
+.icon {
+  position: relative;
+  color: #4b5a69;
+}
+
+.icon_primary {
+  font-size: 40px;
+}
+
+.icon_secondary {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 30px;
+  right: -15px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid #4b5a69;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_orange {
+  color: #fda23b;
+}
+
+.icon_red {
+  color: red;
+}
+
+.icon_green {
+  color: green;
+}

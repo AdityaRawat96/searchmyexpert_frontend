@@ -1,0 +1,38 @@
+.dataform_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.dataform_label {
+  color: white !important;
+}
+
+.dataform_input {
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  background-color: #3d404a !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-color: #3cdf1f !important;
+  margin-bottom: 20px;
+}
+
+.dataform_button {
+  border-radius: 0px !important;
+  background-color: #28ba6d !important;
+  color: black !important;
+  font-weight: bold !important;
+  padding: 10px 40px !important;
+  margin-top: 50px;
+  border: 2px solid white !important;
+  margin-bottom: 50px;
+}
+
+.form_heading {
+  font-size: 40px;
+  color: #3cdf1f;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}

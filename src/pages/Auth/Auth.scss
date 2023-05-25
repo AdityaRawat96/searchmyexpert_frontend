@@ -1,0 +1,119 @@
+@import '~bootstrap/scss/bootstrap';
+//@import "~react-bootstrap-sidebar-menu/dist/sidebar-menu";
+@import './sidebar';
+
+html,
+body,
+#root {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #f3f4f6;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main';
+}
+
+.main-header {
+  grid-area: header;
+  padding: 0.5rem;
+}
+
+.main-container {
+  grid-area: main;
+  box-shadow: inset 2px 1px 9px 1px rgba($dark, 0.1);
+  overflow: auto;
+  padding-top: 1rem;
+}
+
+.sidebar-menu {
+  padding-top: 0;
+  flex-direction: column;
+  grid-area: sidebar;
+  overflow-y: auto;
+}
+
+.form_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.form_card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 20px;
+  border-radius: 20px !important;
+  background-color: #f8f8f9 !important;
+}
+
+.form_card label {
+  font-size: 16px;
+  color: #9da5ad;
+}
+
+.forgot-password-label {
+  font-size: 14px;
+  color: #8e949b;
+}
+
+.form_card a {
+  text-decoration: none;
+  color: #ff8686;
+  margin-right: 5px;
+}
+
+.form_card a:hover {
+  text-decoration: none;
+  color: #ff8686;
+}
+
+.form_card input[type='email'],
+.form_card input[type='password'] {
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form_container form {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.form-header-sm {
+  font-size: 0.8rem;
+  color: #ff8686;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-header-lg {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.form-header-md {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+}

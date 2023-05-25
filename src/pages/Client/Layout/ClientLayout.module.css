@@ -1,0 +1,153 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  min-width: 300px;
+  background: repeating-linear-gradient(
+    135deg,
+    #404d5a,
+    #404d5a 5px,
+    #3e4b58 5px,
+    #3e4b58 10px
+  );
+  z-index: 1000 !important;
+  height: 100vh;
+}
+
+.sidebar_show {
+  margin-left: 0px;
+  transition: all ease-in-out 0.3s;
+}
+
+.sidebar_hide {
+  margin-left: -300px;
+  transition: all ease-in-out 0.3s;
+}
+
+.sidebar_header {
+  border-bottom: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 5px 10px;
+  height: 60px;
+}
+
+.sidebar_brand {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.sidebar_body {
+  padding: 0px;
+}
+
+.sidebar_logo {
+  position: relative;
+  width: 200px;
+  height: 100%;
+}
+
+.sidebar_close_btn {
+  display: none;
+  float: right;
+  color: #fff !important;
+  background: none !important;
+  border: none !important;
+}
+
+.sidebar_heading_text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.sidebar_subheading_text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #cdd1d4;
+  margin-top: 20px;
+}
+
+.sidebar_footer {
+  position: absolute;
+  bottom: 0px;
+  padding: 30px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid rgb(128, 128, 128, 0.3);
+}
+
+.sidebar_footer_details {
+  margin-left: 20px;
+}
+
+.sidebar_footer_name {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sidebar_footer_email {
+  display: block;
+  font-size: 0.8rem;
+  color: #cdd1d4;
+  margin-bottom: 10px;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #f3f4f6;
+}
+
+.main_show {
+  margin-left: 300px;
+  transition: all ease-in-out 0.3s;
+}
+
+.main_hide {
+  margin-left: 0px;
+  transition: all ease-in-out 0.3s;
+}
+
+.header_primary {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #fff;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 60px;
+}
+
+.content {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background: #f3f4f6;
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    height: calc(100vh - 110px);
+    top: 110px;
+  }
+  .main {
+    margin-left: 0px !important;
+  }
+  .sidebar_close_btn {
+    display: inline-block;
+  }
+  .header_primary {
+    display: flex;
+  }
+}

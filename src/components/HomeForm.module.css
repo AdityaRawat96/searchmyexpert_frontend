@@ -1,0 +1,39 @@
+.homeform_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.homeform_label {
+  color: #3cdf1f !important;
+  font-size: 30px !important;
+  display: inline !important;
+  font-weight: bold !important;
+}
+
+.homeform_input {
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  background-color: #3d404a !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-color: #3cdf1f !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.homeform_checkbox {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.homeform_button {
+  border-radius: 0px !important;
+  background-color: #28ba6d !important;
+  color: black !important;
+  font-weight: bold !important;
+  padding: 10px 40px !important;
+  margin-top: 50px;
+  border: 2px solid white !important;
+  margin-bottom: 50px;
+}
