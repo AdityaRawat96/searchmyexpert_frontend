@@ -22,8 +22,6 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.1",
     "react-bootstrap-sidebar-menu": "^2.0.3",
-    "react-bs-datatable": "^3.6.1",
-    "react-data-table-component": "^7.5.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
@@ -33,7 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build --legacy-peer-deps",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
