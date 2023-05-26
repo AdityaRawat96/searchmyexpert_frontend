@@ -4,10 +4,18 @@ import classes from './AccordionCard.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment/moment';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 const AccordionCard = (props) => {
   const [cardCollapsed, setCardCollapsed] = useState(true);
+
+  useEffect(() => {
+    if (props.index === props.collapsedCard) {
+      setCardCollapsed(false);
+    } else {
+      setCardCollapsed(true);
+    }
+  }, [props.collapsedCard, props.index]);
 
   return (
     <Card key={props.index} className={`mb-3 ${classes.card}`}>
@@ -97,7 +105,7 @@ const AccordionCard = (props) => {
                   : classes.card_description_controls_inverted
               } `}
               onClick={() => {
-                setCardCollapsed(!cardCollapsed);
+                props.cardToggleHandler(props.index);
               }}
             >
               <FontAwesomeIcon icon={faAngleDown} />

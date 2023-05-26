@@ -281,3 +281,13 @@ input[type='color']:focus,
 .table-project {
   box-shadow: none !important;
 }
+
+.page-content-heading {
+  position: relative;
+  width: fit-content;
+  font-size: 1.8rem;
+  background-image: url('/public/assets/images/underline.svg');
+  background-position: 0 1.06em;
+  background-size: 150px 12px;
+  background-repeat: repeat-x;
+}

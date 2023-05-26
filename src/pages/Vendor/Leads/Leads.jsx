@@ -22,6 +22,7 @@ import { useState } from 'react';
 
 const Leads_List = [
   {
+    id: 1,
     status: 'New',
     name: 'John Doe',
     service_type: 'Wordpress Design',
@@ -35,6 +36,7 @@ const Leads_List = [
   Suspendisse interdum consectetur libero id faucibus. Dignissim suspendisse in est ante in nibh mauris cursus. Commodo quis imperdiet massa tincidunt nunc. Eleifend mi in nulla posuere sollicitudin aliquam. Amet tellus cras adipiscing enim eu turpis. Metus aliquam eleifend mi in. Velit dignissim sodales ut eu sem integer vitae. Gravida rutrum quisque non tellus orci ac. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Senectus et netus et malesuada fames ac turpis egestas maecenas. Porta lorem mollis aliquam ut porttitor leo a.`,
   },
   {
+    id: 2,
     status: 'Pending',
     name: 'John Doe',
     service_type: 'Wordpress Design',
@@ -48,6 +50,7 @@ const Leads_List = [
   Suspendisse interdum consectetur libero id faucibus. Dignissim suspendisse in est ante in nibh mauris cursus. Commodo quis imperdiet massa tincidunt nunc. Eleifend mi in nulla posuere sollicitudin aliquam. Amet tellus cras adipiscing enim eu turpis. Metus aliquam eleifend mi in. Velit dignissim sodales ut eu sem integer vitae. Gravida rutrum quisque non tellus orci ac. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Senectus et netus et malesuada fames ac turpis egestas maecenas. Porta lorem mollis aliquam ut porttitor leo a.`,
   },
   {
+    id: 3,
     status: 'New',
     name: 'John Doe',
     service_type: 'Wordpress Design',
@@ -61,6 +64,7 @@ const Leads_List = [
   Suspendisse interdum consectetur libero id faucibus. Dignissim suspendisse in est ante in nibh mauris cursus. Commodo quis imperdiet massa tincidunt nunc. Eleifend mi in nulla posuere sollicitudin aliquam. Amet tellus cras adipiscing enim eu turpis. Metus aliquam eleifend mi in. Velit dignissim sodales ut eu sem integer vitae. Gravida rutrum quisque non tellus orci ac. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Senectus et netus et malesuada fames ac turpis egestas maecenas. Porta lorem mollis aliquam ut porttitor leo a.`,
   },
   {
+    id: 4,
     status: 'Pending',
     name: 'John Doe',
     service_type: 'Wordpress Design',
@@ -74,6 +78,7 @@ const Leads_List = [
   Suspendisse interdum consectetur libero id faucibus. Dignissim suspendisse in est ante in nibh mauris cursus. Commodo quis imperdiet massa tincidunt nunc. Eleifend mi in nulla posuere sollicitudin aliquam. Amet tellus cras adipiscing enim eu turpis. Metus aliquam eleifend mi in. Velit dignissim sodales ut eu sem integer vitae. Gravida rutrum quisque non tellus orci ac. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Senectus et netus et malesuada fames ac turpis egestas maecenas. Porta lorem mollis aliquam ut porttitor leo a.`,
   },
   {
+    id: 5,
     status: 'New',
     name: 'John Doe',
     service_type: 'Wordpress Design',
@@ -87,6 +92,7 @@ const Leads_List = [
   Suspendisse interdum consectetur libero id faucibus. Dignissim suspendisse in est ante in nibh mauris cursus. Commodo quis imperdiet massa tincidunt nunc. Eleifend mi in nulla posuere sollicitudin aliquam. Amet tellus cras adipiscing enim eu turpis. Metus aliquam eleifend mi in. Velit dignissim sodales ut eu sem integer vitae. Gravida rutrum quisque non tellus orci ac. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Senectus et netus et malesuada fames ac turpis egestas maecenas. Porta lorem mollis aliquam ut porttitor leo a.`,
   },
   {
+    id: 6,
     status: 'Pending',
     name: 'John Doe',
     service_type: 'Wordpress Design',
@@ -100,6 +106,7 @@ const Leads_List = [
   Suspendisse interdum consectetur libero id faucibus. Dignissim suspendisse in est ante in nibh mauris cursus. Commodo quis imperdiet massa tincidunt nunc. Eleifend mi in nulla posuere sollicitudin aliquam. Amet tellus cras adipiscing enim eu turpis. Metus aliquam eleifend mi in. Velit dignissim sodales ut eu sem integer vitae. Gravida rutrum quisque non tellus orci ac. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Senectus et netus et malesuada fames ac turpis egestas maecenas. Porta lorem mollis aliquam ut porttitor leo a.`,
   },
   {
+    id: 7,
     status: 'New',
     name: 'John Doe',
     service_type: 'Wordpress Design',
@@ -113,6 +120,7 @@ const Leads_List = [
   Suspendisse interdum consectetur libero id faucibus. Dignissim suspendisse in est ante in nibh mauris cursus. Commodo quis imperdiet massa tincidunt nunc. Eleifend mi in nulla posuere sollicitudin aliquam. Amet tellus cras adipiscing enim eu turpis. Metus aliquam eleifend mi in. Velit dignissim sodales ut eu sem integer vitae. Gravida rutrum quisque non tellus orci ac. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Senectus et netus et malesuada fames ac turpis egestas maecenas. Porta lorem mollis aliquam ut porttitor leo a.`,
   },
   {
+    id: 8,
     status: 'Pending',
     name: 'John Doe',
     service_type: 'Wordpress Design',
@@ -128,6 +136,7 @@ const Leads_List = [
 ];
 
 const Leads = () => {
+  const [collapsedCard, setCollapsedCard] = useState(null);
   const [showFormModal, setShowFormModal] = useState(false);
   const [showStatusModal, setShowStatusModal] = useState(false);
 
@@ -141,6 +150,10 @@ const Leads = () => {
     e.preventDefault();
     handleFormModalClose();
     handleStatusModalShow();
+  };
+
+  const cardToggleHandler = (id) => {
+    setCollapsedCard(id);
   };
 
   return (
@@ -302,12 +315,14 @@ const Leads = () => {
         </Col>
       </Row>
       {Leads_List.length > 0 ? (
-        Leads_List.map((item, index) => (
+        Leads_List.map((item) => (
           <AccordionCard
-            index={index}
+            index={item.id}
             item={item}
-            key={index}
+            key={item.id}
             handleShow={handleFormModalShow}
+            collapsedCard={collapsedCard}
+            cardToggleHandler={cardToggleHandler}
           />
         ))
       ) : (

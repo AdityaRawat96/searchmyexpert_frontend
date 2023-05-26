@@ -64,11 +64,11 @@
 .card_collapsed {
   height: 100px;
   overflow: hidden;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
 }
 
 .card_expanded {
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
   margin-bottom: 20px;
 }
 
@@ -89,12 +89,12 @@
 }
 
 .card_description_controls_normal {
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
 }
 
 .card_description_controls_inverted {
   transform: rotate(180deg);
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
 }
 
 .btn_accept,

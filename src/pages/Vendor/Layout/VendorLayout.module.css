@@ -152,8 +152,7 @@
 
 @media (max-width: 1200px) {
   .sidebar {
-    height: calc(100vh - 110px);
-    top: 110px;
+    height: 100vh;
   }
   .main {
     margin-left: 0px !important;
